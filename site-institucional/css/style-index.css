@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    height: 100vh;
+    background: url('../img/background-cptm.png');
+    background-size: cover;
+}
+
+.section {
+    text-align: center;
+    padding: 2% 4%;
+    height: 90vh;
+}
+
+.section-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-section-image {
+    width: 100%;
+}
+
+.section-title {
+    padding: 3%;
+    font-size: 6vh;
+    color: rgb(36, 36, 36);
+}
+
+.section-subtitle {
+    margin-top: -4%;
+    padding: 1.5%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    padding: 3%;
+    text-align: justify;
+}
+
+#section-empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url('../img/background-empresa.jpg');
+    background-size: cover;
+}
+
+#section-empresa .section-image {
+    grid-column: 1;
+    position: relative;
+}
+
+#section-empresa .img-section-image {
+    width: 480px;
+    animation: flutuar 6s infinite;
+    position: absolute;
+}
+
+#section-empresa .section-intro {
+    grid-column: 2;
+    padding: 10%;
+}
+
+#section-empresa .content {
+    grid-column: 1 / 3;
+}
+
+.div-mvs {
+    position: relative;
+    width: 25%;
+    margin: 1%;
+    padding: 1.5%;
+    font-size: 85%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px 1px #29292946;
+}
+
+.mvs-p {
+    padding: 5% 0 0 0;
+    text-align: justify;
+}
+
+.mvs-title {
+    text-align: left;
+}
+
+.mvs-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(112, 36, 253);
+    right: -6%;
+    top: -6%;
+    border-radius: 100%;
+}
+
+.mvs-icon img {
+    width: 60%;
+}
+
+@keyframes flutuar{
+    0% {
+        margin-top: 10px;
+    }
+    25% {
+        margin-top: -10px;
+    }
+    50% {
+        margin-top: 10px;
+    }
+    75% {
+        margin-top: -10px;
+    }
+    100% {
+        margin-top: 10px;
+    }
+}
+
+#section-equipe {
+    display: grid;
+    grid-template-rows: 1fr 2fr; 
+    background: url(../img/fundo-equipe.jpg); 
+    background-size: cover; 
+}
+
+#section-equipe .section-intro {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section-equipe .content {
+    grid-row: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#section-equipe .section-title {
+    width: 40%;
+    text-align: left;
+    margin-left: 6%;
+}
+
+#section-equipe .section-subtitle {
+    width: 30%;
+    margin-left: 6%;
+    padding: 1.5% 3%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+div.div-membro {
+    position: relative;
+    background: white;
+    margin: 1%;
+    height: 250px;
+    width: 180px;
+    box-shadow: 0 6px 10px 1px #29292946;
+}
+
+div.div-membro div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+div.photo-membro {
+    width: 100%;
+    height: 60%;
+    padding: 12% 10% 0 10%;
+}
+
+div.img-photo-membro {
+    width: 90%;
+    height: 100%;
+    background: rgb(202, 202, 202);
+    border-radius: 100%;
+}
+
+img.img-membro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.name-membro {
+    flex-direction: column;
+    padding: 6% 8%;
+}
+
+.name-membro h3.name {
+    font-size: 100%;
+    color: rgb(37, 37, 37);
+}
+
+.social-medias {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: -8%;
+}
+
+.div-social-media { 
+    width: 40px;
+    height: 40px;
+    margin: 3%;
+    border-radius: 100%;
+    
+}
+
+.div-social-media:nth-child(1) { 
+    background: rgb(44, 82, 255);
+}
+
+.div-social-media:nth-child(2) { 
+    background: rgb(51, 51, 51);
+}
+
+.div-social-media:nth-child(3) { 
+    background: rgb(23, 131, 255);
+}
+
+.div-social-media a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.div-social-media a:hover > .social-media-icon {
+    transform: scale(1.1);
+}
+
+#section-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/fundo-contato.jpg);
+    background-size: cover;
+}
+
+div.area-contato {
+    background: white;
+    width: 70%;
+    height: 90%;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    box-shadow: 0px 5px 10px 5px rgba(37, 37, 37, 0.185);
+}
+
+#section-contato .content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 4%;
+}
+
+#section-contato .section-intro {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0 8%;
+}
+
+#section-contato .section-title {
+    padding: 1.2%;
+}
+
+div.contato-form {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+#section-contato div.form-area {
+    position: relative;
+    padding: 1%;
+    margin-top: 4%;
+    min-height: 50px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.form-area .input, .text-area {
+    background: rgb(238, 236, 236);
+    border: 1px solid rgb(238, 236, 236);
+}
+
+div.form-area .input, .text-area, .submit-btn {
+    width: 98%;
+    padding: 5%;
+}
+
+div.form-area .input, .submit-btn, .text-area {
+    border-radius: 5px;
+}
+
+div.form-area .text-area {
+    resize: none;
+}
+
+div.form-area .submit-btn {
+    font-weight: bold;
+    background: rgb(128, 100, 255);
+    border: 1px solid rgb(128, 100, 255);
+    color: white;
+}
+
+div.form-area .submit-btn:hover {
+    color: rgb(128, 100, 255);
+    background: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+i.contato-input-icon {
+    color: rgb(175, 175, 175);
+    position: absolute;
+    right: 10%;
+}
+
+div.form-area .input:focus, .text-area:focus, .submit-btn:focus {
+    outline: none;
+}
+
+div.form-area .input:focus, .text-area:focus {
+    border-color: grey;
+    transition: .2s;
+}
