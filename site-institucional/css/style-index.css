@@ -25,8 +25,6 @@ html {
     background-size: cover;
 }
 
-
-
 .section {
     text-align: center;
     padding: 2% 4%;
@@ -77,7 +75,7 @@ html {
 }
 
 #section-empresa .img-section-image {
-    width: 480px;
+    width: 530px;
     animation: flutuar 6s infinite;
     position: absolute;
 }
@@ -87,6 +85,11 @@ html {
     padding: 10%;
 }
 
+#section-empresa .section-title {
+    text-align: left;
+    font-size: 7vh;
+}
+
 #section-empresa .content {
     grid-column: 1 / 3;
 }
@@ -94,6 +97,7 @@ html {
 .div-mvs {
     position: relative;
     width: 25%;
+    height: 50%;
     margin: 1%;
     padding: 1.5%;
     font-size: 85%;
