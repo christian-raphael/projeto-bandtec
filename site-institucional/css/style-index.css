@@ -157,11 +157,16 @@ html {
     grid-template-columns: 1fr 1fr;
     background: url(../img/backgound-projeto.png);
     background-size: cover;
+    padding: 0;
 }
 
 #section-projeto .section-intro {
     grid-area: texto;
     padding: 40px;
+    padding-bottom: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 #section-projeto .section-image {
@@ -172,6 +177,14 @@ html {
     text-align: left;
 }
 
+.image-intro{
+    width: 90%;
+    height: 100%;
+    align-self: center;
+    background: url(../img/undraw_data_xmfy.png);
+    background-size: cover;
+    position: relative;
+}
 
 #section-equipe {
     display: grid;
