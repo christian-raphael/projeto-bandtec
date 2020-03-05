@@ -149,6 +149,29 @@ html {
         margin-top: 10px;
     }
 }
+#section-projeto {
+    display: grid;
+    grid-template-areas: 
+        "texto imagem"
+    ;
+    grid-template-columns: 1fr 1fr;
+    background: url(../img/backgound-projeto.png);
+    background-size: cover;
+}
+
+#section-projeto .section-intro {
+    grid-area: texto;
+    padding: 40px;
+}
+
+#section-projeto .section-image {
+    grid-area: imagem;
+}
+
+#section-projeto .section-intro .section-title {
+    text-align: left;
+}
+
 
 #section-equipe {
     display: grid;
