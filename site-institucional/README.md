@@ -15,3 +15,6 @@ parte institucional (em andamento)
 - rodapé
 
 OBS: Parte do sistema ainda veremos os requisitos mais a frente. Também vale citar que está lista de afazeres acima não é definitva, podendo ser alterada tanto adicionando novos componentes, quanto removendo alguns já existentes.
+
+
+aaaaaaaa
