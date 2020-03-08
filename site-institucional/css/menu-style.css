@@ -89,7 +89,7 @@ li.menu-button {
     border-radius: 25px;
     padding: 6%;
     width: 50%;
-    background: linear-gradient(to right, rgb(255, 100, 44), rgb(255, 30, 0));
+    background: linear-gradient(to right, #6186ff, #4772ff);
     text-align: center;
     margin-right: 12%;
 }

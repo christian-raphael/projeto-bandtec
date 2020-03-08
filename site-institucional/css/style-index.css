@@ -122,7 +122,7 @@ html {
     position: absolute;
     width: 50px;
     height: 50px;
-    background: rgb(112, 36, 253);
+    background: #214acf;
     right: -6%;
     top: -6%;
     border-radius: 100%;
@@ -457,13 +457,13 @@ div.form-area .text-area {
 
 div.form-area .submit-btn {
     font-weight: bold;
-    background: rgb(128, 100, 255);
-    border: 1px solid rgb(128, 100, 255);
+    background: #4772ff;
+    border: 1px solid #4772ff;
     color: white;
 }
 
 div.form-area .submit-btn:hover {
-    color: rgb(128, 100, 255);
+    color: #4772ff;
     background: white;
     cursor: pointer;
     transition: .5s;
@@ -559,7 +559,7 @@ div.form-area .input:focus, .text-area:focus {
 
     #proximo i:hover{
         transition: 0.5s;
-        color: rgb(128, 100, 255);;
+        color: #4772ff;
     }
     #anterior{
         position: absolute;
@@ -578,5 +578,5 @@ div.form-area .input:focus, .text-area:focus {
 
     #anterior i:hover{
         transition: 0.5s;
-        color: rgb(128, 100, 255);;
+        color: #4772ff;
     }
