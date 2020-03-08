@@ -42,7 +42,7 @@ function smoothScroll(event) {
     const targetId = event.currentTarget.getAttribute('href');
 
     window.scrollTo({
-        top: $(targetId).offsetTop - 30,
+        top: $(targetId).offsetTop - 40,
         behavior: 'smooth'
     });
 }

@@ -13,6 +13,19 @@ nav#nav-menu {
 
 div#div-logo-menu {
     grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img#logo-menu {
+    width: 30px;
+    margin-top: 25%;
+}
+
+div#div-logo-menu h2 {
+    margin-left: 2%;
+    color: white;
 }
 
 ul#menu-site {
@@ -107,4 +120,8 @@ nav.nav-scrolled a.menu-link:hover {
 nav.nav-scrolled a.menu-link:hover::after {
     width: 80%;
     background: rgb(31, 31, 31);
+}
+
+nav.nav-scrolled h2 {
+    color: rgb(31, 31, 31) !important;
 }
