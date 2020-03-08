@@ -18,12 +18,12 @@ html {
 }
 
 .imagem-home{
-    width: 50%;
+    width: 58%;
     height: 82%;
     align-self: center;
     background: url(../img/undraw_laravel_and_vue_59tp.png);
     background-size: cover;
-    margin-right: 15%;
+    margin-right: 5%;
     margin-top: 3%;
 }
 
