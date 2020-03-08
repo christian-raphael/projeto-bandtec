@@ -46,13 +46,14 @@ html {
     margin-left: 2%;
     outline: none;
     cursor: pointer;
+    border: 1px solid #4772ff;
 }
 
 #home .section-intro button:hover{
     transition: .5s;
     background: white;
     color: #4772FF;
-    border: 3px solid #4772FF;
+    border: 1px solid #4772ff;
 }
 
 
