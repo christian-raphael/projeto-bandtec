@@ -110,7 +110,46 @@
                 <div class="image-intro"></div>
             </div>
             <div class="section-image">
-
+                <div class="galeria">
+                    <div class="foto">
+                        <a href="#abrirModal-foto" onclick="imagemModal(0)">
+                            <div class="foto1">
+                                <div class="efeito-foto">
+                                    <img src="img/mais.png" style="width: 80px;" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="foto">
+                        <a href="#abrirModal-foto" onclick="imagemModal(1)">
+                            <div class="foto2">
+                                <div class="efeito-foto">
+                                    <img src="img/mais.png" style="width: 80px;" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>                
+                </div>
+                <div class="galeria">
+                    <div class="foto">
+                        <a href="#abrirModal-foto" onclick="imagemModal(2)">
+                            <div class="foto3">
+                                <div class="efeito-foto">
+                                    <img src="img/mais.png" style="width: 80px;" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="foto">
+                        <a href="#abrirModal-foto" onclick="imagemModal(3)">
+                            <div class="foto4">
+                                <div class="efeito-foto">
+                                    <img src="img/mais.png" style="width: 80px;" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>                
+                </div>
             </div>
         </section>
 
@@ -386,6 +425,18 @@
                 </section>
             </div>
         </div>
+
+        <!-- MODAL FOTO -->
+        <div id="abrirModal-foto" class="modal">
+            <button id="anterior"onclick="ant()"><i class="fas fa-angle-left"></i></button>
+            <div id="fotomodal">
+                <a href="#fechar" title="Fechar" class="fechar-modal-foto">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+            <button id="proximo"  onclick="prox()"><i class="fas fa-angle-right"></i></button>
+        </div>
+
     <!-- RODAPÉ -->
     <footer id='footer'>
 
@@ -393,5 +444,7 @@
 
     <script src="js/menu-animation.js"></script>
     <script src="js/login-animation.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
+

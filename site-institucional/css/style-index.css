@@ -154,10 +154,10 @@ html {
     grid-template-areas: 
         "texto imagem"
     ;
-    grid-template-columns: 1fr 1fr;
     background: url(../img/backgound-projeto.png);
     background-size: cover;
     padding: 0;
+    grid-template-columns: 1fr 1fr;
 }
 
 #section-projeto .section-intro {
@@ -171,6 +171,11 @@ html {
 
 #section-projeto .section-image {
     grid-area: imagem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
 }
 
 #section-projeto .section-intro .section-title {
@@ -184,6 +189,74 @@ html {
     background: url(../img/undraw_data_trends_b0wg.png);
     background-size: cover;
     position: relative;
+}
+
+#section-projeto .section-image .section-title {
+    text-align: left;
+}  
+
+.galeria{
+    width: 90%;
+    height: 50%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    top: 0;
+}
+
+.foto{
+    width: 330px;
+    height: 270px;
+    margin: 5px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.foto1{
+    width: 100%;
+    height: 100%;
+    background: url(../img/galeria1.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.foto2{
+    width: 100%;
+    height: 100%;
+    background: url(../img/galeria2.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.foto3{
+    width: 100%;
+    height: 100%;
+    background: url(../img/galeria3.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.foto4{
+    width: 100%;
+    height: 100%;
+    background: url(../img/galeria4.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.efeito-foto{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.616);
+    opacity: 0.0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.efeito-foto:hover{
+    transition: 0.5s;
+    opacity: 1;
+    cursor: pointer;
 }
 
 #section-equipe {
@@ -410,3 +483,100 @@ div.form-area .input:focus, .text-area:focus {
     border-color: grey;
     transition: .2s;
 }
+
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modal > div {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 10% auto;
+    padding: 15px 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 5px solid white;
+    background-size: cover;
+
+  }
+
+  .fechar-modal-foto {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+   }
+
+    .fechar-modal-foto i {
+        color: #ffffff;
+    }
+
+    .fechar-modal-foto i:hover {
+        color: rgb(255, 60, 60);
+        transition: .5s;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    #proximo{
+        position: absolute;
+        background: transparent;
+        color: white;
+        font-size: 50px;
+        border: 0;
+        cursor: pointer;
+        right: 20%;
+        outline: none;
+    }
+    #proximo i{
+        color: white;
+    } 
+
+    #proximo i:hover{
+        transition: 0.5s;
+        color: rgb(128, 100, 255);;
+    }
+    #anterior{
+        position: absolute;
+        background: transparent;
+        color: white;
+        font-size: 50px;
+        border: 0;
+        cursor: pointer;
+        left: 20%;
+        outline: none;
+    }
+
+    #anterior i{
+        color: white;
+    }
+
+    #anterior i:hover{
+        transition: 0.5s;
+        color: rgb(128, 100, 255);;
+    }
