@@ -612,3 +612,37 @@ div.form-area .input:focus, .text-area:focus {
         transition: 0.5s;
         color: #4772ff;
     }
+
+#footer {
+    height: 25vh;
+    background: rgb(36, 36, 36);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    padding: 2% 4%;
+}
+
+div.footer-topic {
+    margin: 1%;
+    min-width: 250px;
+    height: 100%;
+}
+div.footer-topic h3 {
+    font-weight: bold;
+    padding-bottom: 4%;
+}
+
+ul.list-sections {
+    list-style: none;
+}
+
+ul.list-sections li {
+    padding: 3% 0;
+    font-weight: 100;
+}
+
+li.li-footer-media {
+    display: inline-block;
+    margin-right: 4%;
+}
