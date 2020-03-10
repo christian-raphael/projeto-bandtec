@@ -14,7 +14,6 @@ Cuidado ao upar novos arquivos, para não acabar upando no diretório errado ou 
 
 Parte institucional (O que falta): 
 
-- Rodapé
 - Formulário para cadastro
  
  Opcionais:
