@@ -18,5 +18,5 @@ Parte institucional (O que falta):
  
  Opcionais:
  
- - FAQ de perguntas
- - Seção de "Deseja receber novidades do projeto?" 
+ - FAQ de perguntas.
+ - Seção de "Deseja receber novidades do projeto?".

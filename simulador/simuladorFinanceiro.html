@@ -83,13 +83,13 @@
     function linhaVerde(){
         resultadoSimulacao.style.display = "grid";
         descricaoLinha.innerHTML = '<p class="desc">A Linha 2–Verde do Metrô de São Paulo é constituída pelo trecho compreendido entre as estações Vila Madalena e Vila Prudente. A linha é também chamada de Linha da Paulista, por percorrer a Avenida Paulista, um dos principais centros financeiros de São Paulo. Apesar de ser chamada de Linha 2, ela foi a terceira a ser construída e atualmente recebe o fluxo em média 714.454 pessoas por dia útil</p> <img src="img/linhaVerdeMetro.jpg" alt="" class="imagem-resultado">';
-        var nimpactados = 0.82 * 714454;
-        var nlembram = nimpactados * 0.59;
-        var ninfluenciados = nimpactados * 0.15;
-        var novosclientes = nimpactados * 0.06;
-        var compradores = novosclientes * 0.01;
-        var rporcliente = lucroMensal.value / qtdcliente.value;
-        var aumento = Number(lucroMensal.value) + (rporcliente * compradores);
+        var nimpactados = 0.82 * 714454; // numero de pessoas impactadas = 82% de 714.454 pessoas que passam em média na linha verde
+        var nlembram = nimpactados * 0.59; //numero de pessoas que lembram do anuncio = 59% de pessoas impactadas
+        var ninfluenciados = nimpactados * 0.15; //numero de pessoas influenciadas pelo anuncio = 15% de pessoas impactadas
+        var novosclientes = nimpactados * 0.06; // numero de novos clientes = 6% de pessoas impactadas
+        var compradores = novosclientes * 0.01; // numero de compradores = 1% de pessoas que podem ser possíveis clientes
+        var rporcliente = lucroMensal.value / qtdcliente.value; // renda por cliente = lucro mensal / quantidade de clientes
+        var aumento = Number(lucroMensal.value) + (rporcliente * compradores); // o aumento é dado pelo lucro mensal + a renda por cliente
         
         impacto.style.display = "block";
         impacto.innerHTML = "<img src='img/influencia.png' alt='' height='60px' style=''> Você pode impactar até <b>"+parseInt(nimpactados)+" pessoas</b> com a sua propaganda.";
